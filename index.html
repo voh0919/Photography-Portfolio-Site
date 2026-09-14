@@ -225,9 +225,9 @@
   .masonry .photo{border-radius:1px;}
   /* organic span cycling */
   .masonry .photo{grid-row:span 5; grid-column:span 2;}
-  .masonry .photo.big{grid-row:span 8; grid-column:span 3;}
-  .masonry .photo.tall{grid-row:span 8; grid-column:span 2;}
-  .masonry .photo.wide{grid-row:span 4; grid-column:span 3;}
+  .masonry .photo.big{grid-row:span 7; grid-column:span 3;}
+  .masonry .photo.tall{grid-row:span 7; grid-column:span 2;}
+  .masonry .photo.wide{grid-row:span 5; grid-column:span 3;}
   .masonry .photo.small{grid-row:span 4; grid-column:span 2;}
 
   /* ---------- ABOUT ---------- */
@@ -492,9 +492,9 @@
       </div>
       <div class="about-text">
         <h1>Hi, I'm Vivian Oh.</h1>
-        <p>I started taking photos on a hand-me-down camera during a family beach trip and never really put it down. Most of what I shoot happens outdoors — coastlines, backseats, the ten minutes before sunset when everything turns the same color.</p>
-        <p>I'm drawn to light more than subject. A lot of my favorite frames happened by accident: a windshield catching the sunrise, a bouquet backlit by accident, a wave that broke right as I pressed the shutter. I shoot mostly on film, which means I don't always know what I have until it's developed — I've come to like the waiting.</p>
-        <p>Lately I've been thinking about how photography and fashion overlap: the way light shapes fabric, the way a silhouette can say more than a face. I'd love to bring that same eye — patient, a little imperfect, always chasing the light — to photographing people and clothes in motion.</p>
+        <p>I started taking photos on my mother's old digital camera during a family beach trip and never really put it down since then. Most of what I shoot happens outdoors — coastlines, backseats, the ten minutes of vibrant light before the sun sets.</p>
+        <p>A lot of my favorite frames happened by accident: a windshield catching the sunrise, a bouquet backlit by accident, a wave that broke right as I pressed the shutter. </p>
+        <p>Lately I've been thinking about how photography and fashion overlap: the way light shapes fabric, the way a silhouette can say more than a face. I'd love to bring that same eye — patient, a little imperfect, capturing the light — to photographing people and clothes in motion.</p>
         <p class="signoff">— see you out there</p>
       </div>
     </div>
@@ -566,42 +566,101 @@
 ===================================================== */
 const PHOTOS = [
   { file:"fxn 2025-07-12 164415.247.JPG", title:"Gulls and Hulls", loc:"Oceanside, CA", category:"coastlines", size:"big", home:"h1" },
-  { file:"fxn 2026-08-15 18453283891CA5B804.JPG", title:"Where the Sun Sits", loc:"Laguna Beach, CA", category:"lightshadow", size:"wide", home:"h3" },
-  { file:"fxn 2026-07-31 1856547D1A6ED711E5.JPG", title:"People Watching", loc:"Buena Park, CA", category:"people", size:"tall", home:"h2" },
-  { file:"original 2025-06-11 194714.598.jpg", title:"Morning Ritual", loc:"", loc:"Englewood, NJ", category:"people", size:"big", home:"h5" },
-  { file:"fxn 2026-08-08 0850142B9866EC8065.JPG", title:"First Light, Front Seat", loc:"Malibu, CA", category:"lightshadow", size:"tall", home:"h4" },
-  { file:"fxn 2025-07-28 113801.005.JPG", title:"Far From Shore", loc:"San Diego, CA", category:"stilllife", size:"small", home:"h6" },
-  { file:"fxn 2025-08-10 163139.205.JPG", title:"Getting Air", loc:"La Canada, CA", category:"people", size:"wide", home:"h7" },
-  { file:"fxn 2025-07-08 154227.803.JPG", title:"Wet Sand", loc:"Santa Monica, CA", category:"everyday", size:"small", home:"h8" },
-  { file:"fxn 2026-08-14 1727302AC31421F643.JPG", title:"Just Beyond", loc:"San Diego, CA", category:"nature", size:"wide", home:"h9" },
-  { file:"fxn 2026-08-08 063908C086B2014DE9.JPG", title:"At the Top", loc:"Pasadena, CA", category:"everyday", size:"wide", home:"h10" },
+  { file:"fxn 2026-08-15 18453283891CA5B804.JPG", title:"Where the Sun Sits", loc:"Laguna Beach, CA", category:"", size:"wide", home:"h3" },
+  { file:"fxn 2026-07-31 1856547D1A6ED711E5.JPG", title:"People Watching", loc:"Buena Park, CA", category:"", size:"tall", home:"h2" },
+  { file:"original 2025-06-11 194714.598.jpg", title:"Morning Ritual", loc:"", loc:"Englewood, NJ", category:"", size:"big", home:"h5" },
+  { file:"fxn 2026-08-08 0850142B9866EC8065.JPG", title:"First Light, Front Seat", loc:"Malibu, CA", category:"people", size:"tall", home:"h4" },
+  { file:"fxn 2025-07-28 113801.005.JPG", title:"Far From Shore", loc:"San Diego, CA", category:"", size:"small", home:"h6" },
+  { file:"fxn 2025-08-10 163139.205.JPG", title:"Getting Air", loc:"La Canada, CA", category:"", size:"wide", home:"h7" },
+  { file:"fxn 2025-07-08 154227.803.JPG", title:"Wet Sand", loc:"Santa Monica, CA", category:"", size:"small", home:"h8" },
+  { file:"fxn 2026-08-14 1727302AC31421F643.JPG", title:"Just Beyond", loc:"San Diego, CA", category:"", size:"wide", home:"h9" },
+  { file:"fxn 2026-08-08 063908C086B2014DE9.JPG", title:"At the Top", loc:"Pasadena, CA", category:"", size:"wide", home:"h10" },
 
-  { file:"fxn 2025-07-12 140848.612.JPG", title:"Warm Towel", loc:"Oceanside, CA", category:"coastlines", size:"wide" },
+  { file:"fxn 2025-07-12 134626.750.JPG", title:"Swoop", loc:"", category:"coastlines", size:"big" },
   { file:"fxn 2025-07-12 141731.593.JPG", title:"Break", loc:"", category:"coastlines", size:"small" },
   { file:"fxn 2025-07-27 190249.506.JPG", title:"Wading", loc:"", category:"coastlines", size:"small" },
   { file:"fxn 2025-07-12 162140.246.JPG", title:"Low Tide", loc:"", category:"coastlines", size:"tall" },
-  { file:"fxn 2025-07-12 134626.750.JPG", title:"Swoop", loc:"", category:"coastlines", size:"big" },
+  { file:"fxn 2025-07-12 140848.612.JPG", title:"Warm Towel", loc:"Oceanside, CA", category:"coastlines", size:"wide" },
   { file:"fxn 2025-07-08 154227.803.JPG", title:"Wet Sand", loc:"", category:"coastlines", size:"small" },
 
-  { file:"fxn 2025-07-28 113456.930.JPG", title:"Under the Palms", loc:"", category:"people", size:"wide" },
-  { file:"fxn 2026-08-15 1856256206BE9F1E4D.JPG", title:"Backseat", loc:"", category:"people", size:"small" },
-  { file:"fxn 2026-07-20 181231EDCB838BE3A2.JPG", title:"Golden Road", loc:"", category:"people", size:"tall" },
-
-  { file:"fxn 2026-08-08 074329C1F22573A973.JPG", title:"Empty Room, Morning", loc:"", category:"lightshadow", size:"small" },
-  { file:"fxn 2025-07-12 161626.637.JPG", title:"Dappled", loc:"", category:"lightshadow", size:"wide" },
+  { file:"fxn 2025-07-12 162645.934.JPG", title:"Tuck In", loc:"", category:"people", size:"big" },
+  { file:"fxn 2026-08-15 1856256206BE9F1E4D.JPG", title:"Palm to Palm", loc:"", category:"people", size:"tall" },
+  { file:"fxn 2026-06-14 1715208218359739A9.JPG", title:"Taking a dip", loc:"", category:"people", size:"small" },
+  { file:"fxn 2026-08-08 074329C1F22573A973.JPG", title:"Rest", loc:"", category:"people", size:"tall" },
+  { file:"fxn 2025-04-27 192451.042.JPG", title:"Childhood Room", loc:"", category:"people", size:"wide" },
+  { file:"fxn 2025-08-30 135854.509.JPG", title:"Uphill", loc:"", category:"people", size:"tall" },
+  { file:"fxn 2025-07-28 113817.107.JPG", title:"Waiting Room", loc:"", category:"people", size:"wide" },
+  
+  { file:"L1100556.JPG", title:"", loc:"", category:"lightshadow", size:"small" },
+  { file:"fxn 2025-01-20 130613.568.JPG", title:"", loc:"", category:"people", size:"tall" },
+  { file:"fxn 2025-01-20 130644.420.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-01-20 130843.136.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-01-20 131013.878.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-01-20 131508.416.JPG", title:"", loc:"", category:"", size:"tall" },
+  { file:"fxn 2025-01-20 132405.576.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-05-01 174206.165.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-05-01 174510.655.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-05-01 175601.688.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-05-01 175609.463.JPG", title:"", loc:"", category:"stilllife", size:"wide" },
+  { file:"fxn 2025-07-08 145108.409.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-08 154825.387.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-08 191244.725.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-08 191319.969.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-08 191326.487.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 140013.971.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 140038.646.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 140551.840 2.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 140551.840.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 140841.786.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 141852.576.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 161626.637.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 161651.241.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 162048.678.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 162125.059.jpg", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 162310.887.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 163009.688.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-12 170136.911.jpg", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-27 173448.455.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-27 173603.833.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-27 180614.662.JPG", title:"", loc:"", category:"stilllife", size:"small" },
+  { file:"fxn 2025-07-27 181007.442.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-27 190053.417.JPG", title:"", loc:"", category:"people", size:"small" },
+  { file:"fxn 2025-07-27 190247.508.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-27 193228.877.JPG", title:"Sun and Moon", loc:"", category:"lightshadow", size:"small" },
+  { file:"fxn 2025-05-03 184933.042.JPG", title:"Dappled", loc:"", category:"lightshadow", size:"wide" },
+  { file:"L1080196.JPG", title:"Empty Room, Morning", loc:"", category:"lightshadow", size:"small" },
   { file:"fxn 2026-08-08 063908C086B2014DE9.JPG", title:"Bell Tower", loc:"", category:"lightshadow", size:"big" },
-
-  { file:"fxn 2025-07-28 113801.005.JPG", title:"Fold", loc:"", category:"stilllife", size:"small" },
-  { file:"fxn 2025-07-28 113817.107.JPG", title:"Persistence", loc:"", category:"nature", size:"small" },
+  { file:"fxn 2025-07-28 113456.930.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-07-28 113801.005.JPG", title:"Fold", loc:"", category:"", size:"big" },
+  { file:"fxn 2025-07-28 113817.107.JPG", title:"Persistence", loc:"", category:"", size:"tall" },
+  { file:"fxn 2025-08-30 140037.964.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2025-11-08 150902.564.JPG", title:"", loc:"", category:"stilllife", size:"small" },
+  { file:"fxn 2026-06-13 114529236F2F9D97BB.JPG", title:"", loc:"", category:"stilllife", size:"tall" },
+  { file:"fxn 2026-06-14 1736056AB755EB7AD9.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-07-20 181231EDCB838BE3A2.JPG", title:"", loc:"", category:"people", size:"small" },
+  { file:"fxn 2026-07-23 1644369CF0AA7DDF83.JPG", title:"", loc:"", category:"stilllife", size:"small" },
+  { file:"fxn 2026-07-31 161608210704B502F6.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-03 190258C1FA0D9C1608.jpg", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-08 063439F54BD20C9339.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-08 063618D3DF3B868774.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-08 063620F32E12EE1F56.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-08 0637349870E217C7C6.JPG", title:"", loc:"", category:"stilllife", size:"tall" },
+  { file:"fxn 2026-08-08 072352786D7974E960.JPG", title:"", loc:"", category:"stilllife", size:"small" },
+  { file:"fxn 2026-08-08 0749022222758550A5.jpg", title:"", loc:"", category:"stilllife", size:"wide" },
+  { file:"fxn 2026-08-08 0759562953AF524FA0.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"fxn 2026-08-14 1927441E78ED49A435.JPG", title:"", loc:"", category:"lightshadow", size:"small" },
+  { file:"original 2025-06-11 193907.608.jpg", title:"", loc:"", category:"", size:"small" },
+  { file:"original 2025-06-11 194325.502.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"original 2025-06-11 195505.963.jpg", title:"", loc:"", category:"", size:"small" },
+  { file:"original 2025-06-11 195850.850.JPG", title:"", loc:"", category:"", size:"small" },
+  { file:"original 2025-06-18 081603.812.JPG", title:"", loc:"", category:"", size:"small" },
 ];
 
 const CATEGORIES = [
   { key:"coastlines", label:"Coastlines" },
   { key:"people", label:"People" },
   { key:"lightshadow", label:"Light & Shadow" },
-  { key:"stilllife", label:"Still Life" },
-  { key:"nature", label:"Nature" },
-  { key:"everyday", label:"Everyday" },
+  { key:"stilllife", label:"Still Life & Nature" },
 ];
 
 const cameraIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13.5" r="3.4"/></svg>`;
